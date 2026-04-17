@@ -1,12 +1,14 @@
 {
     "inbounds": [{
         "port": 10000,
-        "protocol": "vless",
+        "protocol": "vmess",
         "settings": {
-            "clients": [{"id": "12345678-1234-1234-1234-1234567890ab"}],
-            "decryption": "none"
+            "clients": [{"id": "12345678-1234-1234-1234-1234567890ab"}]
         },
-        "streamSettings": {"network": "ws"}
+        "streamSettings": {
+            "network": "ws",
+            "wsSettings": {"path": "/"}
+        }
     }],
     "outbounds": [{"protocol": "freedom"}]
 }
