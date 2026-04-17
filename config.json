@@ -1,6 +1,6 @@
 {
     "inbounds": [{
-        "port": 10000,
+        "port": 8080,
         "protocol": "vmess",
         "settings": {
             "clients": [{"id": "12345678-1234-1234-1234-1234567890ab"}]
